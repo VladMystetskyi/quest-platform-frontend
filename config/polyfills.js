@@ -1,5 +1,5 @@
 //import for material-ui (https://www.npmjs.com/package/material-ui#react-tap-event-plugin)
-import injectTapEventPlugin from 'react-tap-event-plugin';
+const injectTapEventPlugin = require('react-tap-event-plugin');
 injectTapEventPlugin();
 
 if (typeof Promise === 'undefined') {
