@@ -1,2 +1,1 @@
-# quest-platform-frontend
-Repository for frontend application of quest platform
+This project is frontend application for QuestPlatform.
