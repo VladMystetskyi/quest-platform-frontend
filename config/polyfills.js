@@ -1,3 +1,7 @@
+//import for material-ui (https://www.npmjs.com/package/material-ui#react-tap-event-plugin)
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
 if (typeof Promise === 'undefined') {
   // Rejection tracking prevents a common issue where React gets into an
   // inconsistent state due to an error, but it gets swallowed by a Promise,
