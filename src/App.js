@@ -3,20 +3,30 @@ import logo from './logo.svg'
 import './App.less'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import RaisedButton from 'material-ui/RaisedButton'
+import i18n from './i18n'
 
 class App extends Component {
+  constructor (props) {
+    super(props)
+    this.onChangeLanguageClick = this.onChangeLanguageClick.bind(this)
+    this.state = {}
+  }
+  onChangeLanguageClick () {
+    this.setState({lng: (i18n.language === 'en') ? 'ru' : 'en'})
+  }
   render () {
+    this.state.lng && i18n.changeLanguage(this.state.lng)
     return (
       <MuiThemeProvider>
         <div className='App'>
           <div className='App-header'>
             <img src={logo} className='App-logo' alt='logo' />
-            <h2>Welcome to React</h2>
+            <h2>{i18n.t('welcomeToQuestomania')}</h2>
           </div>
           <p className='App-intro'>
-            To get started, edit <code>src/App.js</code> and save to reload.
+            {i18n.t('introToQuestomania')}
           </p>
-          <RaisedButton />
+          <RaisedButton label={i18n.t('changeLanguageButton')} onClick={this.onChangeLanguageClick} />
         </div>
       </MuiThemeProvider>
     )
