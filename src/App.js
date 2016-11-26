@@ -2,21 +2,12 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.less'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import RaisedButton from 'material-ui/RaisedButton'
-import i18n from './i18n'
-import geo from './geo'
+import i18n from 'i18n'
+import geo from 'geo'
+import ChangeLangContainer from './features/changeLang/containers/ChangeLangContainer'
 
 class App extends Component {
-  constructor (props) {
-    super(props)
-    this.onChangeLanguageClick = this.onChangeLanguageClick.bind(this)
-    this.state = {}
-  }
-  onChangeLanguageClick () {
-    this.setState({lng: (i18n.language === 'en') ? 'ru' : 'en'})
-  }
   render () {
-    this.state.lng && i18n.changeLanguage(this.state.lng)
     geo
       .then((position) => {
         console.debug('position: ', position)
@@ -34,7 +25,7 @@ class App extends Component {
           <p className='App-intro'>
             {i18n.t('introToQuestomania')}
           </p>
-          <RaisedButton label={i18n.t('changeLanguageButton')} onClick={this.onChangeLanguageClick} />
+          <ChangeLangContainer />
         </div>
       </MuiThemeProvider>
     )
