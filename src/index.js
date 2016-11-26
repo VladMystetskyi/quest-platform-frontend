@@ -23,6 +23,15 @@ store.subscribe(() => {
   }
 })
 
+let currFBUserID = store.getState().loginReducer.id
+store.subscribe(() => {
+  const newFBUserID = store.getState().loginReducer.id
+  if (newFBUserID !== currFBUserID && window.localStorage) {
+    window.localStorage.setItem('FB.UserID', newFBUserID)
+    currFBUserID = newFBUserID
+  }
+})
+
 ReactDOM.render(
   <Provider store={store}>
     <App />
