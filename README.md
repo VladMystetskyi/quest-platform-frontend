@@ -1,2 +1,2 @@
 This project is frontend application for QuestPlatform.
-https://travis-ci.org/VladMystetskyi/quest-platform-frontend.svg?branch=master
+[![Build Status](https://travis-ci.org/VladMystetskyi/quest-platform-frontend.svg?branch=master)](https://travis-ci.org/VladMystetskyi/quest-platform-frontend)
