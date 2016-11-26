@@ -23,6 +23,15 @@ i18next
           'changeLanguageButton': 'Изменить язык',
           'eof': 'eof'
         }
+      },
+      he: {
+        translation: {
+          'welcomeToQuestomania': 'Welcome to Questomania',
+          'language': 'Language',
+          'introToQuestomania': 'Intro to Questomania',
+          'changeLanguageButton': 'Change language',
+          'eof': 'eof'
+        }
       }
     }
   })
