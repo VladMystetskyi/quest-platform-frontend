@@ -12,6 +12,9 @@ i18next
           'language': 'Language',
           'introToQuestomania': 'Intro to Questomania',
           'changeLanguageButton': 'Change language',
+          'en': 'en',
+          'ru': 'ru',
+          'he': 'he',
           'eof': 'eof'
         }
       },
@@ -21,6 +24,9 @@ i18next
           'language': 'Язык',
           'introToQuestomania': 'О Questomania',
           'changeLanguageButton': 'Изменить язык',
+          'en': 'en',
+          'ru': 'ru',
+          'he': 'he',
           'eof': 'eof'
         }
       },
@@ -30,6 +36,9 @@ i18next
           'language': 'Language',
           'introToQuestomania': 'Intro to Questomania',
           'changeLanguageButton': 'Change language',
+          'en': 'en',
+          'ru': 'ru',
+          'he': 'he',
           'eof': 'eof'
         }
       }
