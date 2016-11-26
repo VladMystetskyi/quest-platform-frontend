@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom'
 import App from './app/components/App'
 import './index.css'
 import langReducer from './features/changeLang/reducer'
+import loginReducer from './features/login/reducer'
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
 import createLogger from 'redux-logger'
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 const logger = createLogger()
-const reducers = combineReducers({langReducer})
+const reducers = combineReducers({langReducer, loginReducer})
 const store = createStore(reducers, composeEnhancers(
   applyMiddleware(logger)
 ))
