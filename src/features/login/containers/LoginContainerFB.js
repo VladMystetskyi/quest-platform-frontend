@@ -6,7 +6,9 @@ const mapStateToProps = (state) => {
   return {
     isLoggedIn: state.loginReducer.isLoggedIn,
     fbLogin: state.loginReducer.fbLogin,
-    name: state.loginReducer.name
+    name: state.loginReducer.name,
+    picture: state.loginReducer.picture,
+    id: state.loginReducer.id
   }
 }
 
