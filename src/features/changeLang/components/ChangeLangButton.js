@@ -3,18 +3,18 @@ import SelectField from 'material-ui/SelectField'
 import MenuItem from 'material-ui/MenuItem'
 import i18n from 'i18n'
 
-const ChangeLangButton = ({lang, onChange}) => (
-  <div>
+const ChangeLangButton = ({lang, onChange, className}) => (
+  <div className={className}>
     <SelectField
-      floatingLabelText={i18n.t('language')}
+      style={{width: '50px'}}
       value={lang}
       onChange={(event, index, value) => {
         onChange(value)
       }}
     >
-      <MenuItem value='en' primaryText='en' />
-      <MenuItem value='ru' primaryText='ru' />
-      <MenuItem value='he' primaryText='he' />
+      <MenuItem value='en' primaryText={i18n.t('en')} />
+      <MenuItem value='ru' primaryText={i18n.t('ru')} />
+      <MenuItem value='he' primaryText={i18n.t('he')} />
     </SelectField>
   </div>
 )
