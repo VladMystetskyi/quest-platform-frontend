@@ -4,6 +4,7 @@ import './App.less'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import RaisedButton from 'material-ui/RaisedButton'
 import i18n from './i18n'
+import geo from './geo'
 
 class App extends Component {
   constructor (props) {
@@ -16,6 +17,13 @@ class App extends Component {
   }
   render () {
     this.state.lng && i18n.changeLanguage(this.state.lng)
+    geo
+      .then((position) => {
+        console.debug('position: ', position)
+      })
+      .catch(() => {
+        console.debug('location is not supported')
+      })
     return (
       <MuiThemeProvider>
         <div className='App'>
