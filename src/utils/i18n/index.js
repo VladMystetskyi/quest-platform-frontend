@@ -9,6 +9,7 @@ i18next
       en: {
         translation: {
           'welcomeToQuestomania': 'Welcome to Questomania',
+          'language': 'Language',
           'introToQuestomania': 'Intro to Questomania',
           'changeLanguageButton': 'Change language',
           'eof': 'eof'
@@ -17,6 +18,7 @@ i18next
       ru: {
         translation: {
           'welcomeToQuestomania': 'Добро пожаловать в Questomania',
+          'language': 'Язык',
           'introToQuestomania': 'О Questomania',
           'changeLanguageButton': 'Изменить язык',
           'eof': 'eof'
