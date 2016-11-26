@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+import logo from '../../static/logo.svg'
 import './App.less'
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import i18n from 'i18n'
 import geo from 'geo'
-import ChangeLangContainer from './features/changeLang/containers/ChangeLangContainer'
+import ChangeLangContainer from '../../features/changeLang/containers/ChangeLangContainer'
 
 class App extends Component {
   render () {
@@ -16,7 +18,7 @@ class App extends Component {
         console.debug('location is not supported')
       })
     return (
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div className='App'>
           <div className='App-header'>
             <img src={logo} className='App-logo' alt='logo' />

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import App from './app/components/App'
 import './index.css'
 import langReducer from './features/changeLang/reducer'
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
