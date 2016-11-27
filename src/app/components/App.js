@@ -3,7 +3,7 @@ import './App.less'
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import i18n from 'i18n'
+import i18n from 'locale'
 import geo from 'geo'
 import Appheader from '../../features/appHeader/components/AppHeader'
 

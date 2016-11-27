@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import RaisedButton from 'material-ui/RaisedButton'
 import ActionLogin from 'material-ui/svg-icons/social/person'
 import FacebookLogin from 'react-fb-auth'
-import i18n from 'i18n'
+import i18n from 'locale'
 import Avatar from 'material-ui/Avatar'
 import CircularProgress from 'material-ui/CircularProgress'
 

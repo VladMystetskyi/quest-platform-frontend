@@ -1,4 +1,4 @@
-import i18n from 'i18n'
+import i18n from 'locale'
 
 const lang = (state = {lang: i18n.language}, action) => {
   switch (action.type) {

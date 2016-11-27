@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import SelectField from 'material-ui/SelectField'
 import MenuItem from 'material-ui/MenuItem'
-import i18n from 'i18n'
+import i18n from 'locale'
 
 const ChangeLangButton = ({lang, onChange, className}) => (
   <div className={className}>

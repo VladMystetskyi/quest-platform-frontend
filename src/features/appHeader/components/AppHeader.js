@@ -2,7 +2,7 @@ import React from 'react'
 import './AppHeader.less'
 import ChangeLangContainer from '../../changeLang/containers/ChangeLangContainer'
 import LoginContainerFB from '../../login/containers/LoginContainerFB'
-import i18n from 'i18n'
+import i18n from 'locale'
 
 const AppHeader = () => (
   <div className='app-header'>
