@@ -1,4 +1,6 @@
-const login = (state = {isLoggedIn: false, id: window.localStorage && window.localStorage.getItem('FB.UserID') || undefined}, action) => {
+const login = (state = {
+  isLoggedIn: false,
+  id: (window.localStorage) ? window.localStorage.getItem('FB.UserID') : undefined}, action) => {
   switch (action.type) {
     case 'LOGIN_FACEBOOK':
       return {
